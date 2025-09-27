@@ -29,7 +29,7 @@ if [ -n "$HOME/Downloads" ]; then
 fi
 
 # Download the agent package
-curl https://vstsagentpackage.azureedge.net/agent/$AZP_AGENT_VERSION/vsts-agent-linux-x64-$AZP_AGENT_VERSION.tar.gz > $HOME/Downloads/vsts-agent-linux-x64-$AZP_AGENT_VERSION.tar.gz
+curl https://download.agent.dev.azure.com/agent/$AZP_AGENT_VERSION/vsts-agent-linux-x64-$AZP_AGENT_VERSION.tar.gz > $HOME/Downloads/vsts-agent-linux-x64-$AZP_AGENT_VERSION.tar.gz
 
 # Create the working directory for the agent service to run jobs under
 if [ -n "$AZP_WORK" ]; then
